@@ -11,14 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/components/card/">
     <link rel="stylesheet" href="style.css">
-<!-- <style>
- .b-example-divider{
-    height: 3rem;
-    background-color:rgba(255, 99, 71);
-    border: solid rgba(red, green, blue, alpha);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(red, green, blue, alpha);
- } -->
+
 </style>   
 <body>
    <!--navbar-->
@@ -34,20 +27,7 @@
                     <a href="search.php" class="nav-link">Search</a>
                     <a href="cart.php" class="nav-link">Cart</a>
                     <a href="index.php" class="nav-link"> Product</a>
-                    <!-- <div class="dropdown">
-                        <a href="allproduct.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Management</a>
-                        <div class="dropdown-menu">
-                        <a href="section1.php" class="dropdown-item">T-Shirt</a>
-                        <a href="section2.php" class="dropdown-item">Long sleeves</a>
-                        <a href="section3.php" class="dropdown-item">Short Sleeve Shirt</a>
-                        <a href="section4.php" class="dropdown-item">Long Sleeve Shirt</a>
-                        <a href="section5.php" class="dropdown-item">Polo shirt</a>
-                        <a href="section6.php" class="dropdown-item">Pants</a>
-                        <a href="section7.php" class="dropdown-item">Trousers</a>
-                        <a href="section8.php" class="dropdown-item">Shorts</a>
-                        
-                        </div>
-                    </div> -->
+                    <a href="productadd.php" class="nav-link"> Add Product </a>
                 </div>
                 <!--right-->
                 

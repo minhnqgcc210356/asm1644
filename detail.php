@@ -18,7 +18,7 @@ require_once('connect.php');
     <ul sytle="list-style-type:none ;" class="list-group">
         Price: <li class="list-group-item"><?=$re['price']?></li>
         Quatity: <li class="list-group-item"><?=$re['quantity']?></li>
-        <!-- Description: <li class="list-group-item"><?=$re['desc']?></li> -->
+
     </ul>
     <form action="cart.php" method="get">
         <div class="col-lg-9">
