@@ -83,14 +83,14 @@ $row = $result->fetch_assoc();
         </div><div class="row mb-3">
             <div class="col-12">
                 <div class="form-group">
-                    <label for="image" class="col-sm-2"> Price</label>
+                    <label for="image" class="col-sm-2"> Image</label>
                     <input type="file" name="image" id="image" class="form-control" value="<?= $row['image'] ?>">
                 </div>
             </div>
         </div><div class="row mb-3">
             <div class="col-12">
                 <div class="form-group">
-                    <label for="emid" class="col-sm-2"> Price</label>
+                    <label for="emid" class="col-sm-2"> Employee ID</label>
                     <input type="text" name="emid" id="emid" class="form-control" value="<?= $row['emid'] ?>">
                 </div>
             </div>
