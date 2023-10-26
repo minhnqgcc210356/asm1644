@@ -68,7 +68,7 @@ $row = $result->fetch_assoc();
         <div class="row mb-3">
             <div class="col-12">
                 <div class="form-group">
-                    <label for="quantity" class="col-sm-2"> Price</label>
+                    <label for="quantity" class="col-sm-2"> Quantity</label>
                     <input type="text" name="quantity" id="quantity" class="form-control" value="<?= $row['quantity'] ?>">
                 </div>
             </div>
@@ -76,7 +76,7 @@ $row = $result->fetch_assoc();
         <div class="row mb-3">
             <div class="col-12">
                 <div class="form-group">
-                    <label for="date" class="col-sm-2"> Price</label>
+                    <label for="date" class="col-sm-2"> Date</label>
                     <input type="date" name="dob" id="dob" class="form-control" value="<?= $row['dob'] ?>">
                 </div>
             </div>
