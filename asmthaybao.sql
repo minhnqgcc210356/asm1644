@@ -1,9 +1,9 @@
-  -- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2023 at 04:30 AM
+-- Generation Time: Oct 26, 2023 at 05:46 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -102,7 +102,7 @@ CREATE TABLE `orders` (
 
 CREATE TABLE `product` (
   `proid` int(11) NOT NULL,
-  `stoid` int(11) NOT NULL,
+  `stoid` varchar(50) NOT NULL,
   `name` varchar(50) NOT NULL,
   `price` decimal(10,0) NOT NULL,
   `quantity` int(11) NOT NULL,
@@ -117,12 +117,12 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`proid`, `stoid`, `name`, `price`, `quantity`, `image`, `dob`, `emid`, `supid`) VALUES
-(1, 1, 'Professors of Hogwarts™', '339000', 50, 'image2.png', '2023-10-18', 1, 1),
-(2, 1, 'Mini Disney The Haunted Mansion', '379000', 50, 'image3.png', '2023-10-18', 1, 1),
-(3, 1, 'The Pumpkin Farm', '269000', 50, 'image6.png', '2023-10-18', 1, 1),
-(4, 1, 'Ghostbusters™ ECTO-1', '185000', 50, 'image4.png', '2023-10-18', 1, 1),
-(5, 1, 'Viking Village', '269000', 50, 'image7.png', '2023-10-16', 1, 2),
-(6, 1, 'Venomized Groot', '219000', 40, 'image5.png', '2023-10-16', 1, 1);
+(1, 'Can Tho', 'Professors of Hogwarts™', '339000', 50, 'image2.png', '2023-10-18', 1, 1),
+(2, 'Can Tho', 'Mini Disney The Haunted Mansion', '379000', 50, 'image3.png', '2023-10-18', 1, 1),
+(3, 'Can Tho', 'The Pumpkin Farm', '269000', 50, 'image6.png', '2023-10-18', 1, 1),
+(4, 'Can Tho', 'Ghostbusters™ ECTO-1', '185000', 50, 'image4.png', '2023-10-18', 1, 1),
+(5, 'Can Tho', 'Viking Village', '269000', 50, 'image7.png', '2023-10-16', 1, 2),
+(6, 'Can Tho', 'Venomized Groot', '219000', 40, 'image5.png', '2023-10-16', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -131,8 +131,7 @@ INSERT INTO `product` (`proid`, `stoid`, `name`, `price`, `quantity`, `image`, `
 --
 
 CREATE TABLE `store` (
-  `stoid` int(20) NOT NULL,
-  `address` varchar(50) NOT NULL,
+  `stoid` varchar(50) NOT NULL,
   `phone` varchar(20) NOT NULL,
   `gmail` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -141,10 +140,10 @@ CREATE TABLE `store` (
 -- Dumping data for table `store`
 --
 
-INSERT INTO `store` (`stoid`, `address`, `phone`, `gmail`) VALUES
-(1, 'An Giang', '024564928', 'asm1644@gmail.com'),
-(2, 'Can Tho', '013123455', 'cantho225@gmail.com'),
-(3, 'Hau Giang', '085434674', 'haucanh235@gmail.com');
+INSERT INTO `store` (`stoid`, `phone`, `gmail`) VALUES
+('An Giang', '024564928', 'asm1644@gmail.com'),
+('Can Tho', '013123455', 'cantho225@gmail.com'),
+('Vinh Long', '085434674', 'haucanh235@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -238,12 +237,6 @@ ALTER TABLE `employee`
 --
 ALTER TABLE `product`
   MODIFY `proid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT for table `store`
---
-ALTER TABLE `store`
-  MODIFY `stoid` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `supplier`
